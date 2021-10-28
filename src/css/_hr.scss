@@ -1,0 +1,26 @@
+hr {
+  margin-top: ($unit * 3);
+  margin-bottom: ($unit * 3);
+  display: inline-flex;
+  width: 100%;
+  border: 0;
+  height: 2px;
+  background: $grey-50;
+}
+
+.hr-one {
+  height: 2px;
+  background: $primaryColour;
+}
+
+.hr-two {
+  height: 2px;
+  background: $warningColour;
+}
+
+.hr_lowProfile {
+  height:1px;
+  margin: 0;
+  // margin-bottom: $unit;
+  display: block;
+}

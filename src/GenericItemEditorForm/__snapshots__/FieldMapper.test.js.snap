@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item Editor Field Mapper should map fields to headings 1`] = `
+Array [
+  Object {
+    "children": Array [
+      Object {
+        "group": 0,
+        "label": "Product Code",
+        "required": true,
+        "type": "text",
+        "uid": "product-code",
+      },
+      Object {
+        "group": 0,
+        "label": "Product Standard",
+        "options": Array [
+          Object {
+            "label": "BSEN",
+            "uid": "bsen",
+          },
+          Object {
+            "label": "ANSI",
+            "uid": "ansi",
+          },
+        ],
+        "required": true,
+        "type": "select",
+        "uid": "product-standard",
+      },
+    ],
+    "label": "",
+    "orientation": "horiz",
+    "type": "embedded",
+    "uid": "group-0",
+  },
+  Object {
+    "children": Array [
+      Object {
+        "collection": "productfinishes",
+        "group": 1,
+        "label": "Finish",
+        "objectLink": true,
+        "type": "reference",
+        "uid": "finish",
+      },
+      Object {
+        "group": 1,
+        "influencer": true,
+        "label": "Fire Rating",
+        "options": Array [
+          Object {
+            "label": "FR30",
+            "uid": "FR30",
+          },
+          Object {
+            "label": "FR45",
+            "uid": "FR45",
+          },
+          Object {
+            "label": "FR60",
+            "uid": "FR60",
+          },
+        ],
+        "type": "select",
+        "uid": "fire-rating",
+      },
+    ],
+    "label": "",
+    "orientation": "horiz",
+    "type": "embedded",
+    "uid": "group-1",
+  },
+  Object {
+    "children": Array [
+      Object {
+        "group": 2,
+        "label": "Cost",
+        "required": true,
+        "type": "number",
+        "uid": "cost",
+      },
+    ],
+    "label": "",
+    "orientation": "horiz",
+    "type": "embedded",
+    "uid": "group-2",
+  },
+  Object {
+    "children": Array [
+      Object {
+        "collectionId": "products",
+        "documentId": "prodId",
+        "fileType": "image",
+        "group": 3,
+        "label": "Images",
+        "multiple": true,
+        "type": "image",
+        "uid": "images",
+      },
+    ],
+    "label": "",
+    "orientation": "horiz",
+    "type": "embedded",
+    "uid": "group-3",
+  },
+  Object {
+    "children": Array [
+      Object {
+        "group": 4,
+        "label": "Quantity",
+        "readOnly": true,
+        "type": "number",
+        "uid": "quantity",
+      },
+    ],
+    "label": "",
+    "orientation": "horiz",
+    "type": "embedded",
+    "uid": "group-4",
+  },
+]
+`;

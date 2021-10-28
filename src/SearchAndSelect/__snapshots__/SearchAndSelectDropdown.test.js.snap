@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchAndSelectDropdown shallow renders Matches Snapshot 1`] = `
+"<div className=\\"sas_drop_wrap invalid\\">
+  <div className=\\"searchFieldWrap\\">
+    <input className=\\"searchField\\" style={{...}} type=\\"text\\" placeholder=\\"search...\\" value=\\"\\" onChange={[Function: onSearchFieldChange]} onFocus={[Function: onFocus]} onKeyDown={[Function: handleInputKeyDown]} />
+    <button type=\\"button\\" className=\\"dropdownBtn\\" onClick={[Function: onClick]}>
+      \\\\/
+    </button>
+  </div>
+  <div className=\\"selectedItemsWrap\\" />
+  <div className=\\"\\">
+    <LoadingIcon isLoading={false} />
+  </div>
+  <CustomSelectDropdown options={{...}} isOpen={false} handleSelect={[Function: handleSelect]} handleClose={[Function: handleClose]} firstItemRef={{...}} goBackToSearchField={[Function: goBackToSearchField]} />
+</div>"
+`;

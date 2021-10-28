@@ -1,0 +1,65 @@
+html {
+  font-size: ($core_font-size / 16px) * 1em;
+  overflow-y: scroll;
+  min-height: 100%;
+}
+
+body {
+  background: $white;
+  font-family: $font-primary;
+  // width: $mq-large;
+  // max-width: $mq-full;
+  // min-width: $mq-medium;
+  padding-left: ($unit * 10);
+  padding-right: ($unit * 10);
+  overflow-x: hidden;
+  margin: auto;
+  width: 100%;
+
+  // This should stop page popping when resizing but doesn't seem to work
+  // transition: all 0.8s ease;
+  transition: padding 0.4s ease-in;
+
+  // Added these in to allow page to shrink when resizing window
+  @media (max-width: $mq-full + 100px) {
+    // padding-left: ($unit * 10);
+    // padding-right: ($unit * 10);
+    // padding-right: ($unit * 10);
+    padding-left: $unit;
+    padding-right: $unit;
+  }
+
+  @media (max-width: $mq-medium + 100px) {
+    padding-left: $unit;
+    padding-right: $unit;
+
+    // Ensure space for scroll bar
+    // padding: 0 10px;
+    // max-width: 95%;
+  }
+}
+
+:focus {
+  outline: 1px $grey-40 dashed;
+}
+::-moz-focus-inner {
+  outline: 1px $grey-40 dashed;
+}
+
+.DISABLED {
+  cursor: not-allowed !important;
+  color: lightgrey !important;
+}
+
+.a-reset {
+  text-decoration: none;
+}
+
+.warning {
+  color: $warningColour-light;
+}
+/* Forms */
+%focus {
+  outline: 2px solid $primaryColour;
+  outline-offset: 0;
+}

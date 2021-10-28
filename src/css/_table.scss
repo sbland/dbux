@@ -1,0 +1,54 @@
+.table {
+  border: $core_border;
+}
+
+/* Header */
+.table_rowHeader {
+  //@include neptune;
+  text-align: left;
+  color: $white;
+  background: $grey-80;
+}
+
+.table_columnHeader {
+  text-transform: uppercase;
+  padding-top: ($unit * 0.5);
+  padding-bottom: ($unit * 0.5);
+  padding-left: ($unit * 1.5);
+  padding-right: ($unit * 1.5);
+}
+
+/* Row */
+.table_row {
+  background: $white;
+
+  &:nth-child(even) {
+    background: $grey-20;
+  }
+}
+
+/* Column */
+.table_column {
+  //@include neptune;
+  padding-top: $unit;
+  padding-bottom: $unit;
+  padding-left: ($unit * 1.5);
+  padding-right: ($unit * 1.5);
+  color: $grey-60;
+
+  &:first-child {
+    color: $black;
+    font-weight: bold;
+  }
+
+  &:not(:last-child) {
+    border-right: $core_border;
+  }
+}
+
+/* Highlight */
+.table_columnHighlight {
+  //@include pluto;
+  color: $primaryColour;
+  padding-left: $unit;
+}

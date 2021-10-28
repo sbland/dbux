@@ -1,0 +1,17 @@
+.wrap {
+  background: $white;
+  height: 100%;
+  margin: 0 auto;
+  // width: $mq-full;
+  // max-width: $mq-full;
+  // min-width: $mq-medium;
+  /* width: $mq-large; */ // TODO: Change to help developing
+  // @media (max-width: $mq-full + 100px) {
+  //   margin-left: 50px;
+  //   margin-right: 50px;
+  // }
+}
+
+#main {
+  position: relative;
+}

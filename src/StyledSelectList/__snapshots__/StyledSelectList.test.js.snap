@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Styled select list Snapshot 1`] = `
+<div
+  className="styledList"
+  style={
+    Object {
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="styledList_headings"
+    style={
+      Object {
+        "zIndex": 10,
+      }
+    }
+  >
+    <div
+      className="styledList_heading"
+      style={
+        Object {
+          "width": 360,
+        }
+      }
+    >
+      UID
+    </div>
+    <div
+      className="styledList_heading"
+      style={
+        Object {
+          "width": 360,
+        }
+      }
+    >
+      Type
+    </div>
+    <div
+      className="styledList_heading"
+      style={
+        Object {
+          "width": 360,
+        }
+      }
+    >
+      Name
+    </div>
+  </div>
+  <div
+    className="styledList_items "
+    style={
+      Object {
+        "zIndex": 10,
+      }
+    }
+  >
+    <button
+      className="styledList_itemBtn "
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="styledList_itemCell "
+        style={
+          Object {
+            "width": 360,
+          }
+        }
+      >
+        filterA
+      </div>
+      <div
+        className="styledList_itemCell "
+        style={
+          Object {
+            "width": 360,
+          }
+        }
+      >
+        text
+      </div>
+      <div
+        className="styledList_itemCell "
+        style={
+          Object {
+            "width": 360,
+          }
+        }
+      >
+        filter A
+      </div>
+    </button>
+    <button
+      className="styledList_itemBtn "
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="styledList_itemCell "
+        style={
+          Object {
+            "width": 360,
+          }
+        }
+      >
+        filterB
+      </div>
+      <div
+        className="styledList_itemCell "
+        style={
+          Object {
+            "width": 360,
+          }
+        }
+      >
+        text
+      </div>
+      <div
+        className="styledList_itemCell "
+        style={
+          Object {
+            "width": 360,
+          }
+        }
+      >
+        filter B
+      </div>
+    </button>
+  </div>
+</div>
+`;

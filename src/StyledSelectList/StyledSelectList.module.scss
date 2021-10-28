@@ -1,0 +1,78 @@
+$unit: 1rem;
+$white: #eeeeee;
+$grey-10: #eeeeee;
+$grey-40: #bbbbbb;
+$font-size-2: $unit * 0.8;
+$font-size-4: $unit * 1.1;
+$mq-medium: 768px;
+$primaryColour: rgb(204, 144, 53);
+$primaryColour-light: lighten($primaryColour, 10%);
+
+.styledList {
+  display: flex;
+  flex-direction: column;
+}
+
+.styledList_items {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  // max-height: 25rem;
+  .styledList_itemBtn {
+    overflow: none;
+  }
+}
+
+.styledList_items-limitHeight {
+  overflow: auto;
+  // max-height: 25rem;
+  .styledList_itemBtn {
+    overflow: none;
+  }
+}
+
+.styledList_itemBtn {
+  border: none;
+
+  &:not(:last-child) {
+    border: 1px $grey-10 solid;
+    border-bottom: 2px $grey-10 solid;
+  }
+
+  padding: 0;
+  display: flex;
+  max-height: $unit * 2;
+  // overflow: hidden;
+}
+
+.styledList_itemCell {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  max-height: $unit * 2;
+  font-size: $font-size-2;
+  line-height: $font-size-4;
+
+  &:not(:last-child) {
+    border-right: 1px $grey-10 solid;
+  }
+  &.selected {
+    color: $white;
+    background: $primaryColour-light;
+  }
+}
+
+.styledList_headings {
+  border-bottom: 4px $grey-40 double;
+  margin-bottom: $unit * 0.4;
+  display: flex;
+}
+
+.styledList_heading {
+  font-weight: 800;
+  &:not(:last-child) {
+    border-right: 1px $grey-10 solid;
+  }
+}

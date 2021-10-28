@@ -1,0 +1,110 @@
+.z-overlay-9999 {
+  z-index: 9999;
+}
+
+.z-overlay-1000 {
+  z-index: 1000;
+}
+
+
+/* 1000 */
+.overlayPanel {
+  // z-index: 1000;
+}
+.uploadPanel {
+  z-index: 1000;
+}
+
+.areYouSurePanel {
+  z-index: 1000;
+}
+
+.headerPromo_dropdown {
+  z-index: 1000;
+}
+.messageBar {
+  z-index: 1000;
+}
+.searchField_results {
+  z-index: 100;
+}
+/* 100 */
+.notification_container {
+  z-index: 100;
+}
+
+
+.searchField_HeaderPromo {
+  .searchField_results {
+    z-index: 100;
+  }
+}
+.searchField_headerPromo_results{
+  z-index: 100;
+}
+
+
+/* 80 */
+.header_megaMenu {
+  z-index: 80;
+}
+
+/* 50 */
+.header * {
+  z-index: 50;
+}
+
+/* 10 */
+.heroSearch_content {
+  z-index: 10;
+}
+
+.hero_content {
+  z-index: 10;
+}
+
+.heroSearch_button {
+  z-index: 10;
+}
+
+.hero_button {
+  z-index: 10;
+}
+
+.hero_formSearchButton {
+  z-index: 10;
+}
+
+.heroSimple_content {
+  z-index: 10;
+}
+
+.heroSearch_formSearchButton {
+  z-index: 10;
+}
+
+/* 5 */
+.viewObject .searchField_results {
+  z-index: 5;
+}
+
+/* 0 */
+.hero_image {
+  z-index: 0;
+}
+
+.heroSearch_image {
+  z-index: 0;
+}
+
+.heroSimple_image {
+  z-index: 0;
+}
+
+.hero_videoWrap {
+  z-index: 0;
+}
+
+.heroSearch_videoWrap {
+  z-index: 0;
+}

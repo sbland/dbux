@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useColumnWidthManager should prepare input data 1`] = `
+Object {
+  "columnWidths": Array [
+    40,
+    40,
+    50,
+    120,
+    60,
+    40,
+    110,
+    100,
+    70,
+    140,
+    70,
+    80,
+    110,
+    130,
+    80,
+    90,
+    70,
+    140,
+    410,
+  ],
+  "error": null,
+  "setColumnWidths": [Function],
+  "tableWidth": 1968,
+}
+`;
+
+exports[`useColumnWidthManager should work 1`] = `
+Object {
+  "columnWidths": Array [
+    40,
+    50,
+    120,
+    60,
+    40,
+    110,
+    100,
+    70,
+    140,
+    70,
+    80,
+    110,
+    130,
+    80,
+    90,
+    70,
+    140,
+    410,
+  ],
+  "error": null,
+  "setColumnWidths": [Function],
+  "tableWidth": 1927,
+}
+`;

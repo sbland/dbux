@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search and Select Snapshots Default - loading 1`] = `
+"<div className=\\"searchAndSelect sas_wrap sectionWrapper\\">
+  <section className=\\"sas_filtersSection\\" style={{...}}>
+    <FilterPanel filterData={{...}} clearFilters={[Function: handleClearFilters]} addFilter={[Function: addFilter]} deleteFilter={[Function: deleteFilter]} updateFilter={[Function: updateFilter]} fieldsData={{...}} showPanelOverride={false} floating={false} autoOpenPanel={false} customFilters={{...}} customFiltersComponents={{...}} />
+  </section>
+  <section className=\\"sas_resultsSection\\" style={{...}}>
+    <div className=\\"sas_resultsList\\" style={{...}}>
+      <div style={{...}}>
+        <StyledSelectList listInput={{...}} headings={{...}} handleSelect={[Function]} currentSelection={{...}} limitHeight={30} selectionField=\\"uid\\" autoWidth={true} customParsers={{...}} />
+      </div>
+      <div className=\\"sas_loadingWrap \\" style={{...}}>
+        Loading results...
+      </div>
+    </div>
+  </section>
+</div>"
+`;
+
+exports[`Search and Select Snapshots Default - with refresh btn 1`] = `
+"<div className=\\"searchAndSelect sas_wrap sectionWrapper\\">
+  <section className=\\"sas_filtersSection\\" style={{...}}>
+    <FilterPanel filterData={{...}} clearFilters={[Function: handleClearFilters]} addFilter={[Function: addFilter]} deleteFilter={[Function: deleteFilter]} updateFilter={[Function: updateFilter]} fieldsData={{...}} showPanelOverride={false} floating={false} autoOpenPanel={false} customFilters={{...}} customFiltersComponents={{...}} />
+    <button type=\\"button\\" className=\\"button-reset refreshBtn\\" onClick={[Function: onClick]} style={{...}}>
+      <Emoji emoj=\\"🔄\\" label=\\"refresh\\" />
+    </button>
+  </section>
+  <section className=\\"sas_resultsSection\\" style={{...}}>
+    <div className=\\"sas_resultsList\\" style={{...}}>
+      <div style={{...}}>
+        <StyledSelectList listInput={{...}} headings={{...}} handleSelect={[Function]} currentSelection={{...}} limitHeight={30} selectionField=\\"uid\\" autoWidth={true} customParsers={{...}} />
+      </div>
+      <div className=\\"sas_loadingWrap \\" style={{...}}>
+        Loading results...
+      </div>
+    </div>
+  </section>
+</div>"
+`;
+
+exports[`Search and Select Snapshots Default - with results 1`] = `
+"<div className=\\"searchAndSelect sas_wrap sectionWrapper\\">
+  <section className=\\"sas_filtersSection\\" style={{...}}>
+    <FilterPanel filterData={{...}} clearFilters={[Function: handleClearFilters]} addFilter={[Function: addFilter]} deleteFilter={[Function: deleteFilter]} updateFilter={[Function: updateFilter]} fieldsData={{...}} showPanelOverride={false} floating={false} autoOpenPanel={false} customFilters={{...}} customFiltersComponents={{...}} />
+  </section>
+  <section className=\\"sas_resultsSection\\" style={{...}}>
+    <div className=\\"sas_resultsList\\" style={{...}}>
+      <div style={{...}}>
+        <StyledSelectList listInput={{...}} headings={{...}} handleSelect={[Function: mockConstructor]} currentSelection={{...}} limitHeight={30} selectionField=\\"uid\\" autoWidth={true} customParsers={{...}} />
+      </div>
+    </div>
+  </section>
+</div>"
+`;
+
+exports[`Search and Select Snapshots Default - with search field 1`] = `
+"<div className=\\"searchAndSelect sas_wrap sectionWrapper\\">
+  <section className=\\"sas_filtersSection\\" style={{...}}>
+    <FilterPanel filterData={{...}} clearFilters={[Function: handleClearFilters]} addFilter={[Function: addFilter]} deleteFilter={[Function: deleteFilter]} updateFilter={[Function: updateFilter]} fieldsData={{...}} showPanelOverride={false} floating={false} autoOpenPanel={false} customFilters={{...}} customFiltersComponents={{...}} />
+    <div style={{...}}>
+      <label>
+        Search: 
+      </label>
+      <input className=\\"searchField\\" style={{...}} type=\\"text\\" placeholder=\\"search...\\" value=\\"\\" onChange={[Function: handleSearchFieldInput]} />
+    </div>
+  </section>
+  <section className=\\"sas_resultsSection\\" style={{...}}>
+    <div className=\\"sas_resultsList\\" style={{...}}>
+      <div style={{...}}>
+        <StyledSelectList listInput={{...}} headings={{...}} handleSelect={[Function]} currentSelection={{...}} limitHeight={30} selectionField=\\"uid\\" autoWidth={true} customParsers={{...}} />
+      </div>
+      <div className=\\"sas_loadingWrap \\" style={{...}}>
+        Loading results...
+      </div>
+    </div>
+  </section>
+</div>"
+`;
+
+exports[`Search and Select Snapshots Default 1`] = `
+"<div className=\\"searchAndSelect sas_wrap sectionWrapper\\">
+  <section className=\\"sas_filtersSection\\" style={{...}}>
+    <FilterPanel filterData={{...}} clearFilters={[Function: handleClearFilters]} addFilter={[Function: addFilter]} deleteFilter={[Function: deleteFilter]} updateFilter={[Function: updateFilter]} fieldsData={{...}} showPanelOverride={false} floating={false} autoOpenPanel={false} customFilters={{...}} customFiltersComponents={{...}} />
+  </section>
+  <section className=\\"sas_resultsSection\\" style={{...}}>
+    <div className=\\"sas_resultsList\\" style={{...}}>
+      <div style={{...}}>
+        <StyledSelectList listInput={{...}} headings={{...}} handleSelect={[Function: mockConstructor]} currentSelection={{...}} limitHeight={30} selectionField=\\"uid\\" autoWidth={true} customParsers={{...}} />
+      </div>
+      <div className=\\"sas_resultsList-empty\\">
+        No results found. Try adjusting the filters above.
+      </div>
+    </div>
+  </section>
+</div>"
+`;
+
+exports[`Search and Select Snapshots Multiple - with live update 1`] = `
+"<div className=\\"searchAndSelect sas_wrap sectionWrapper\\">
+  <section className=\\"sas_filtersSection\\" style={{...}}>
+    <FilterPanel filterData={{...}} clearFilters={[Function: handleClearFilters]} addFilter={[Function: addFilter]} deleteFilter={[Function: deleteFilter]} updateFilter={[Function: updateFilter]} fieldsData={{...}} showPanelOverride={false} floating={false} autoOpenPanel={false} customFilters={{...}} customFiltersComponents={{...}} />
+  </section>
+  <section className=\\"sas_resultsSection\\" style={{...}}>
+    <div className=\\"sas_resultsList\\" style={{...}}>
+      <div style={{...}}>
+        <StyledSelectList listInput={{...}} headings={{...}} handleSelect={[Function]} currentSelection={{...}} limitHeight={30} selectionField=\\"uid\\" autoWidth={true} customParsers={{...}} />
+      </div>
+      <div className=\\"sas_loadingWrap \\" style={{...}}>
+        Loading results...
+      </div>
+    </div>
+  </section>
+  <section className=\\"sas_manageSelectionSection\\">
+    <button type=\\"button\\" className=\\"button-one selectAllBtn\\" onClick={[Function: mockConstructor]}>
+      Select All
+    </button>
+    <button type=\\"button\\" className=\\"button-one clearSelectionButton\\" onClick={[Function: mockConstructor]}>
+      Clear Selection
+    </button>
+  </section>
+</div>"
+`;

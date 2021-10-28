@@ -1,0 +1,82 @@
+$white: #eeeeee;
+$defaultBoxShadow: 1px 1px 20px 10px rgba(100, 100, 100, 0.1);
+$unit: 1rem;
+$font-size-1: $unit * 0.7;
+
+// Primary
+$primaryColour: rgb(204, 144, 53);
+$primaryColour-light: lighten($primaryColour, 10%);
+$primaryColour-dark: darken($primaryColour, 10%);
+
+.filterManager {
+  // position: relative;
+}
+
+.filterManager_panel {
+  /* Turned all these off as panel now just sits in section */
+  // position: absolute;
+  // background: $white-off;
+  // padding: $unit;
+  // border: 1px $primaryColour solid;
+  // border-radius: 2px;
+  // box-shadow: $defaultBoxShadow;
+  // min-width: ($unit * 30);
+
+  &.floating {
+    position: absolute;
+    padding: $unit;
+    background: $white;
+    box-shadow: $defaultBoxShadow;
+
+    min-width: 30%;
+    max-width: 100%;
+    width: 100%;
+    border: 1px $primaryColour solid;
+    z-index: 100;
+  }
+}
+
+.filterManager_filterList {
+  list-style: none;
+}
+
+.filterManager_filterItem {
+  margin-bottom: $unit;
+  justify-content: stretch;
+  display: flex;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  align-content: stretch;
+  align-items: bottom;
+  height: ($unit * 2);
+  vertical-align: middle;
+  margin-right: -$unit;
+
+  * {
+    font-size: $font-size-1;
+    line-height: ($unit * 2);
+    height: ($unit * 2);
+    margin-right: $unit;
+  }
+
+  :nth-child(2) {
+    // flex-basis: 40%;
+    width: 30%;
+    white-space: nowrap;
+    text-align: right;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  :nth-child(3) {
+    width: 20%;
+    height: 100%;
+  }
+
+  :nth-child(4) {
+    // flex-basis: 40%;
+    width: 20%;
+    flex-grow: 1;
+    height: 100%;
+  }
+}

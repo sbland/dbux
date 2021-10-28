@@ -1,0 +1,21 @@
+
+.searchFieldWrap {
+  display: flex;
+  min-height: 1.2rem;
+  height: 100%;
+  position: relative;
+}
+
+.sas_drop_wrap {
+  width: 100%;
+  position: relative;
+  .loadingIcon {
+    position: absolute;
+    top: 0;
+  }
+  &.invalid {
+    .searchField {
+      color: red;
+    }
+  }
+}

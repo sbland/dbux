@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeleteBtn Matches Snapshot 1`] = `
+"<Fragment>
+  <PopupPanelMock isOpen={false} handleClose={[Function: handleClose]}>
+    <div>
+      <h1>
+        Are You Sure?
+      </h1>
+      <div>
+        <button type=\\"button\\" className=\\"areYouSureCancel button-one\\" onClick={[Function: onClick]}>
+          Cancel
+        </button>
+        <button type=\\"button\\" className=\\"areYouSureAccept button-two\\" onClick={[Function: onClick]}>
+          Delete 
+          Item
+        </button>
+      </div>
+    </div>
+  </PopupPanelMock>
+  <button disabled={false} onClick={[Function: onClick]} type=\\"button\\" className=\\"deleteBtn demoClass\\">
+    <Emoji emoj=\\"🗑️\\" label=\\"Delete\\" />
+  </button>
+</Fragment>"
+`;

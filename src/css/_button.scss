@@ -1,0 +1,343 @@
+@import "typography";
+
+// Added to reset a button to just a link
+.button_reset,.button-reset {
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  text-align: left;
+  line-height: 25.5px;
+  * {
+    pointer-events: none;
+  }
+  &:focus {
+    border: none;
+  }
+}
+// Added to reset a button to just a link
+.button_reset-fitToParent {
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  text-align: left;
+  line-height: 25.5px;
+  width:100%;
+  height:100%;
+  * {
+    pointer-events: none;
+  }
+  &:focus {
+    border: none;
+  }
+}
+
+.button {
+  ////@include pluto;
+  transition: color 0.20s ease-in-out;
+  transition: background-color 0.20s ease-in-out;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white;
+  background: $primaryColour;
+  display: inline-block;
+  padding-left: ($unit * 1.2);
+  padding-right: ($unit * 1.2);
+  padding-top: ($unit * 0.6);
+  padding-bottom: ($unit * 0.6);
+  border: 1px solid $primaryColour;
+  cursor: pointer;
+  border-radius: 0;
+
+  &:hover {
+    background: $primaryColour-dark;
+    border: 1px solid $primaryColour-dark;
+  }
+}
+
+.button-one {
+  //@include pluto;
+  transition: color 0.20s ease-in-out;
+  transition: background-color 0.20s ease-in-out;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white;
+  background: $primaryColour;
+  display: inline-block;
+  padding-left: ($unit * 1.2);
+  padding-right: ($unit * 1.2);
+  padding-top: ($unit * 0.6);
+  padding-bottom: ($unit * 0.6);
+  border: 1px solid $primaryColour;
+  cursor: pointer;
+  border-radius: 0;
+
+  &:hover {
+    background: $primaryColour-dark;
+    border: 1px solid $primaryColour-dark;
+  }
+}
+
+// .button-oneLarge {
+//   @extend %uranus;
+//   text-decoration: none;
+//   text-transform: uppercase;
+//   color: $white;
+//   background: $primaryColour;
+//   display: inline-block;
+//   padding: ($unit * 1.5);
+//   border: 1px solid $primaryColour;
+//   cursor: pointer;
+//   border-radius: 0;
+
+//   &:hover {
+//     background: $primaryColour-dark;
+//     border: 1px solid $primaryColour-dark;
+//   }
+// }
+
+.button-two {
+  //@include pluto;
+  transition: color 0.20s ease-in-out;
+  transition: background-color 0.20s ease-in-out;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white;
+  background: $grey-60;
+  display: inline-block;
+  padding-left: ($unit * 1.2);
+  padding-right: ($unit * 1.2);
+  padding-top: ($unit * 0.6);
+  padding-bottom: ($unit * 0.6);
+  border: 1px solid $grey-60;
+  cursor: pointer;
+  border-radius: 0;
+
+  &:hover {
+    color: $white;
+    background: $grey-70;
+    border: 1px solid $grey-70;
+
+    svg {
+      fill: $white;
+    }
+  }
+}
+
+.button-three {
+  //@include pluto;
+  transition: color 0.20s ease-in-out;
+  transition: background-color 0.20s ease-in-out;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $grey-70;
+  background: $white;
+  display: inline-block;
+  padding-left: ($unit * 1.2);
+  padding-right: ($unit * 1.2);
+  padding-top: ($unit * 0.6);
+  padding-bottom: ($unit * 0.6);
+  border: 1px solid $grey-70;
+  cursor: pointer;
+  border-radius: 0;
+
+  &:hover {
+    color: $white;
+    background: $grey-70;
+  }
+}
+
+.button-four {
+  //@include pluto;
+  transition: color 0.20s ease-in-out;
+  transition: background-color 0.20s ease-in-out;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $primaryColour;
+  background: $white;
+  display: inline-block;
+  padding-left: ($unit * 1.2);
+  padding-right: ($unit * 1.2);
+  padding-top: ($unit * 0.6);
+  padding-bottom: ($unit * 0.6);
+  border: 1px solid $primaryColour;
+  cursor: pointer;
+  border-radius: 0;
+
+  &:hover {
+    color: $white;
+    background: $primaryColour;
+  }
+  &:focus {
+    border:1px solid #107b75;
+    outline: 1px solid #107b75;
+  }
+}
+
+.button-five {
+  //@include pluto;
+  transition: color 0.20s ease-in-out;
+  transition: background-color 0.20s ease-in-out;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $grey-70;
+  background: $white;
+  display: inline-block;
+  padding-left: ($unit * 1.2);
+  padding-right: ($unit * 1.2);
+  padding-top: ($unit * 0.6);
+  padding-bottom: ($unit * 0.6);
+  border: 1px solid $grey-70;
+  cursor: pointer;
+  border-radius: 0;
+
+  &:hover {
+    color: $white;
+    background: $warningColour-light;
+  }
+}
+
+.button-warning {
+  //@include pluto;
+  transition: color 0.20s ease-in-out;
+  transition: background-color 0.20s ease-in-out;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  background: $warningColour-light;
+  display: inline-block;
+  // padding-left: ($unit * 1.2);
+  // padding-right: ($unit * 1.2);
+  // padding-top: ($unit * 0.6);
+  // padding-bottom: ($unit * 0.6);
+  border: 1px solid $primaryColour;
+  cursor: pointer;
+  border-radius: 0;
+
+  &:hover {
+    color: $white;
+    background: $primaryColour;
+  }
+  &:focus {
+    border:1px solid #107b75;
+    outline: 1px solid #107b75;
+  }
+}
+
+.buttonPlus {
+  @extend .button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    display: flex;
+  }
+
+  svg {
+    margin-left: $unit;
+  }
+
+  path {
+    fill: $white;
+  }
+}
+
+.buttonMinus {
+  @extend .button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    display: flex;
+  }
+
+  .iconMinus_wrap {
+    display: flex;
+  }
+
+  .iconMinus {
+    margin-top: auto;
+  }
+
+  svg {
+    display: flex;
+    margin-left: $unit;
+  }
+
+  path {
+    fill: $white;
+  }
+}
+
+.buttonEdit {
+  @extend .button;
+}
+
+.buttonSave {
+  @extend .button;
+}
+
+.buttonUser {
+  @extend .button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    display: flex;
+  }
+
+  svg {
+    display: flex;
+    margin-left: $unit;
+  }
+
+  path {
+    fill: $primaryColour-dark;
+  }
+
+  &:hover {
+
+    path {
+      fill: $primaryColour-light;
+    }
+  }
+}
+
+.buttonUser-isLoggedIn {
+  @extend .buttonUser;
+
+  path {
+    fill: $white;
+  }
+}
+
+.buttonFeedback {
+  @extend .button;
+}
+
+.buttonBeta {
+  @extend .button-one;
+  //@include saturn;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, $primaryColour, $primaryColour-dark);
+
+  &:hover {
+    background-image: linear-gradient(to right, $primaryColour, $primaryColour-dark);
+  }
+}
+
+.buttonBeta_icon {
+  background: $white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding-top: 11px;
+  display: inline-block;
+  margin-left: 10px;
+}

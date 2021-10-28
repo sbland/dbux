@@ -1,0 +1,117 @@
+/*
+ * CSS specific for IE10 + 11
+ * Usage:
+
+```
+@include ie-10and11 {
+  float: left;
+  width: 100%;
+}
+```
+*/
+@mixin ie-10and11 {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
+
+/*
+ * CSS specific for IE Edge
+ * Usage:
+
+```
+@include ie-edge {
+  float: left;
+  width: 100%;
+}
+```
+*/
+@mixin ie-edge {
+  @supports (-ms-accelerator: true) {
+    @content;
+  }
+}
+
+/*
+ * CSS specific for iOS
+ * Usage:
+
+```
+@include ios {
+  float: left;
+  width: 100%;
+}
+```
+*/
+@mixin ios {
+  @supports (-webkit-overflow-scrolling: touch) {
+    @content;
+  }
+}
+
+/*
+ * CSS specific for Safari 10.1+
+ * Usage:
+
+```
+@include safari {
+  float: left;
+  width: 100%;
+}
+```
+*/
+@mixin safari {
+  @media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+      @content;
+    }
+  }
+}
+
+// Text Wrap
+@mixin textWrap {
+  max-width: ($unit * 60);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+///
+/// Viewport sized typography with minimum and maximum values
+///
+/// @author Eduardo Boucas (@eduardoboucas)
+///
+/// @param {Number}   $responsive  - Viewport-based size
+/// @param {Number}   $min         - Minimum font size (px)
+/// @param {Number}   $max         - Maximum font size (px)
+///                                  (optional)
+/// @param {Number}   $fallback    - Fallback for viewport-
+///                                  based units (optional)
+///
+/// @example scss - 5vw font size (with 50px fallback),
+///                 minumum of 35px and maximum of 150px
+///  @include responsive-font(5vw, 35px, 150px, 50px);
+///
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+
+  @if $fallback {
+    font-size: $fallback;
+  }
+
+  font-size: $responsive;
+}

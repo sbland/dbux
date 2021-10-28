@@ -1,0 +1,256 @@
+// $font-primary: 'Roboto', Helvetica, Arial, sans-serif;
+$font-primary: 'Roboto', Helvetica, Arial, sans-serif;
+$font-secondary: 'Roboto', Helvetica, Arial, sans-serif;
+$font-readable: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+$font-size: $unit;
+$line-height: ($unit * 2.5);
+
+$core_line-height: ($unit * 1.6);
+$textColour: #444;
+
+p {
+  font-family: $font-readable;
+  font-size: $font-size * 0.9;
+  line-height: $core_line-height;
+  color: $textColour;
+}
+
+label {
+  font-family: $font-readable;
+  font-size: $font-size * 1.1;
+  line-height: $core_line-height;
+  color: $textColour;
+}
+
+/*
+ * Typography Mixins, required to allow for nesting in media queries
+ * Usage:
+
+```
+.component {
+  //@include jupiter;
+
+  @media (min-width: $mq-medium) {
+    @include earth;
+  }
+}
+```
+*/
+
+/* Textblock Standard */
+@mixin textblock-standard {
+  font-family: $font-readable;
+  font-size: $font-size * 0.9;
+  line-height: $core_line-height;
+  color: $grey-80;
+}
+
+.textblock-standard {
+  @include textblock-standard;
+}
+
+/* Section Title */
+@mixin section-title {
+  font-family: $font-primary;
+  font-size: $font-size * 1.1;
+  line-height: $core_line-height;
+  color: $primaryColour;
+  text-transform: uppercase;
+}
+
+.section-title {
+  @include section-title;
+}
+
+/* Section Heading */
+@mixin section-heading {
+  font-family: $font-primary;
+  font-size: $font-size;
+  line-height: $core_line-height;
+  color: $grey-70;
+  text-transform: uppercase;
+}
+
+.section-heading {
+  @include section-heading;
+}
+
+/* Text Label */
+@mixin textLabel {
+  font-family: $font-primary;
+  font-size: $font-size;
+  line-height: $core_line-height;
+  color: $grey-70;
+  text-transform: uppercase;
+}
+
+.textLabel {
+  @include textLabel;
+}
+
+
+// OLD MIXINS!! //
+
+
+// Mercury
+// $mercury-font-size: 6em;
+
+// @mixin mercury {
+//   font-family: $font-secondary;
+//   font-size: $mercury-font-size;
+//   text-transform: uppercase;
+//   font-weight: 100;
+// }
+
+// @mixin mercury-alt {
+//   font-family: $font-secondary;
+//   font-size: $mercury-font-size;
+// }
+
+// Venus
+// $venus-font-size: 5em;
+
+// @mixin venus {
+//   font-family: $font-primary;
+//   font-size: $venus-font-size;
+//   text-transform: uppercase;
+//   font-weight: 100;
+// }
+
+// @mixin venus-alt {
+//   font-family: $font-secondary;
+//   font-size: $venus-font-size;
+// }
+
+// Earth
+// $earth-font-size: 2em;
+
+// @mixin earth {
+//   font-family: $font-primary;
+//   font-size: $earth-font-size;
+//   text-transform: uppercase;
+//   font-weight: 100;
+// }
+
+// @mixin earth-alt {
+//   font-family: $font-secondary;
+//   font-size: $earth-font-size;
+// }
+
+// Mars
+// $mars-font-size: 3em;
+
+// @mixin mars {
+//   font-family: $font-primary;
+//   font-size: $mars-font-size;
+//   text-transform: uppercase;
+//   font-weight: 100;
+//   line-height: 1em;
+// }
+
+// @mixin mars-alt {
+//   font-family: $font-secondary;
+//   font-size: $mars-font-size;
+// }
+
+// Jupiter
+// $jupiter-font-size: 2em;
+
+// @mixin jupiter {
+//   font-family: $font-primary;
+//   font-size: $jupiter-font-size;
+//   text-transform: uppercase;
+//   font-weight: 100;
+//   line-height: 1.1em;
+// }
+
+// @mixin jupiter-alt {
+//   font-family: $font-secondary;
+//   font-size: $jupiter-font-size;
+// }
+
+// Saturn
+// $saturn-font-size: 1.5em;
+
+// @mixin saturn {
+//   font-family: $font-primary;
+//   font-size: $saturn-font-size;
+//   text-transform: uppercase;
+//   font-weight: 100;
+// }
+
+// @mixin saturn-alt {
+//   font-family: $font-secondary;
+//   font-size: $saturn-font-size;
+// }
+
+// Uranus
+// $uranus-font-size: 16px;
+
+// @mixin uranus {
+//   font-family: $font-primary;
+//   font-size: $uranus-font-size;
+// }
+
+// @mixin uranus-alt {
+//   font-family: $font-secondary;
+//   font-size: $uranus-font-size;
+// }
+
+// Neptune
+// $neptune-font-size: 14px;
+
+// @mixin neptune {
+//   font-family: $font-primary;
+//   font-size: $neptune-font-size;
+//   line-height: 1.5em;
+//   // border: 2px solid red;
+// }
+
+// @mixin neptune-alt {
+//   font-family: $font-secondary;
+//   font-size: $neptune-font-size;
+// }
+
+// Pluto
+// $pluto-font-size: 12px;
+
+// @mixin pluto {
+//   font-family: $font-primary;
+//   font-size: $pluto-font-size;
+// }
+
+// @mixin pluto-alt {
+//   font-family: $font-secondary;
+//   font-size: $pluto-font-size;
+// }
+
+// Headers
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+}
+
+// h1, .mercury {
+//   @include mercury;
+// }
+
+// h2, .venus {
+//   @include venus;
+// }
+
+// h3, .earth {
+//   @include earth;
+// }
+
+// h4, .mars {
+//   //@include mars;
+// }
+
+// h5, .jupiter {
+//   //@include jupiter;
+// }
+
+// h6, .saturn {
+//   //@include saturn;
+// }

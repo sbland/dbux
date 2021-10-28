@@ -1,0 +1,93 @@
+/* Default */
+fieldset {
+  border: $core_border;
+  padding-top: ($unit * 2);
+  padding-bottom: ($unit * 2);
+  padding-left: ($unit * 2);
+  padding-right: ($unit * 2);
+  margin-bottom: ($unit * 2);
+}
+
+legend {
+  display: table;
+  max-width: 100%;
+  padding-left: $unit;
+  padding-right: $unit;
+  white-space: normal;
+}
+
+/* Labels */
+.formLabel {
+  margin-bottom: ($unit * 2);
+}
+
+.formLabel_label {
+  display: block;
+  margin-bottom: ($unit * 0.5);
+}
+
+
+
+/* Checkbox */
+.formCheckbox_label {
+  position: relative;
+  padding-right: $unit;
+}
+
+/* Radio */
+.formRadio_label {
+  position: relative;
+  padding: 0 ($unit * 1.5) 0 ($unit * 0.5);
+}
+
+input {
+  border:1px solid #cccccc;
+  outline: none;
+  color: $grey-70;
+
+  &:focus {
+    border:1px solid #107b75;
+    outline: 1px solid #107b75;
+  }
+}
+
+select {
+  background: transparent;
+  cursor: pointer;
+  border: 1px $grey-40 solid;
+  font-size: 14px;
+  // height: 29px;
+  // height: 100%;
+  padding: 5px; /* If you add too much padding here, the options won't show in IE */
+  // width: 268px;
+  width: 100%;
+
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+
+  &:hover {
+    outline: 1px $primaryColour-light solid;
+  }
+
+  &:focus {
+    outline: 1px $primaryColour-light dashed;
+  }
+}

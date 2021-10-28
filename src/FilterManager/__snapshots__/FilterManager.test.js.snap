@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterManager Add Filter Button Component should match snapshot 1`] = `
+"<button type=\\"button\\" className=\\"button-two addFilterBtn\\" onClick={[Function: handleNewFilter]}>
+  Add Filter
+</button>"
+`;
+
+exports[`FilterManager Matches Snapshot 1`] = `
+"<FilterPanel filterData={{...}} addFilter={[Function: mockConstructor]} deleteFilter={[Function: mockConstructor]} updateFilter={[Function: mockConstructor]} clearFilters={[Function: mockConstructor]} showPanelOverride={true} fieldsData={{...}} floating={false} autoOpenPanel={false} customFilters={{...}} customFiltersComponents={{...}}>
+  <div className=\\"filterManager\\">
+    <button type=\\"button\\" className=\\"button-one openFiltersButton\\" onClick={[Function: onClick]}>
+      Filters
+    </button>
+    <div className=\\"filterManager_panel \\" style={{...}}>
+      <FiltersList filterData={{...}} deleteFilter={[Function: deleteFilter]} updateFilter={[Function: updateFilter]} fieldsData={{...}} customFilters={{...}} customFiltersComponents={{...}}>
+        <ul className=\\"filterManager_filterList\\">
+          <li className=\\"filterManager_filterItem\\" id=\\"demoFilterString\\">
+            <button type=\\"button\\" className=\\"button-one deleteFilterBtn\\" onClick={[Function: onClick]}>
+              X
+            </button>
+            <select value=\\"name\\" onChange={[Function: onChange]} className=\\"filterItem_filterFieldSelect\\">
+              <option value=\\"name\\">
+                Name
+              </option>
+              <option value=\\"count\\">
+                Count
+              </option>
+              <option value=\\"filterA\\">
+                filter A
+              </option>
+              <option value=\\"filterB\\">
+                filter B
+              </option>
+              <option value=\\"select\\">
+                Select
+              </option>
+              <option value=\\"filterEmbedded\\">
+                Embedded Filter
+              </option>
+            </select>
+            <FilterString filter={{...}} updateFilter={[Function: updateFilter]} fieldData={{...}}>
+              <select value=\\"contains\\" onChange={[Function: updateOperator]} className=\\"filterOperatorSelect\\">
+                <option value=\\"regex\\">
+                  contains
+                </option>
+                <option value=\\"=\\">
+                  is exactly
+                </option>
+                <option value=\\"empty\\">
+                  is empty
+                </option>
+              </select>
+              <input type=\\"text\\" className=\\"filterInput\\" value=\\"Foo\\" onChange={[Function: updateValue]} disabled={false} />
+            </FilterString>
+          </li>
+          <li className=\\"filterManager_filterItem\\" id=\\"demoFilterNumber\\">
+            <button type=\\"button\\" className=\\"button-one deleteFilterBtn\\" onClick={[Function: onClick]}>
+              X
+            </button>
+            <select value=\\"count\\" onChange={[Function: onChange]} className=\\"filterItem_filterFieldSelect\\">
+              <option value=\\"name\\">
+                Name
+              </option>
+              <option value=\\"count\\">
+                Count
+              </option>
+              <option value=\\"filterA\\">
+                filter A
+              </option>
+              <option value=\\"filterB\\">
+                filter B
+              </option>
+              <option value=\\"select\\">
+                Select
+              </option>
+              <option value=\\"filterEmbedded\\">
+                Embedded Filter
+              </option>
+            </select>
+            <FilterNumber filter={{...}} updateFilter={[Function: updateFilter]} fieldData={{...}}>
+              <select value=\\">\\" onChange={[Function: updateOperator]} className=\\"filterOperatorSelect\\">
+                <option value=\\"=\\">
+                  =
+                </option>
+                <option value=\\">\\">
+                  &gt;
+                </option>
+                <option value=\\"<\\">
+                  &lt;
+                </option>
+              </select>
+              <input className=\\"filterInput\\" type=\\"number\\" value={0} onChange={[Function: updateValue]} />
+            </FilterNumber>
+          </li>
+          <li className=\\"filterManager_filterItem\\" id=\\"demoFilterExpression\\">
+            <button type=\\"button\\" className=\\"button-one deleteFilterBtn\\" onClick={[Function: onClick]}>
+              X
+            </button>
+            <select value=\\"select\\" onChange={[Function: onChange]} className=\\"filterItem_filterFieldSelect\\">
+              <option value=\\"name\\">
+                Name
+              </option>
+              <option value=\\"count\\">
+                Count
+              </option>
+              <option value=\\"filterA\\">
+                filter A
+              </option>
+              <option value=\\"filterB\\">
+                filter B
+              </option>
+              <option value=\\"select\\">
+                Select
+              </option>
+              <option value=\\"filterEmbedded\\">
+                Embedded Filter
+              </option>
+            </select>
+            <FilterSelect filter={{...}} updateFilter={[Function: updateFilter]} fieldData={{...}} multiple={false}>
+              <select value=\\"contains\\" onChange={[Function: updateOperator]} className=\\"filterOperatorSelect\\">
+                <option value=\\"contains\\">
+                  contains
+                </option>
+                <option value=\\"=\\">
+                  is exactly
+                </option>
+              </select>
+              <select multiple={false} value=\\"a\\" onChange={[Function: updateValue]}>
+                <option>
+                   
+                </option>
+                <option value=\\"a\\">
+                  A
+                </option>
+                <option value=\\"b\\">
+                  B
+                </option>
+              </select>
+            </FilterSelect>
+          </li>
+        </ul>
+      </FiltersList>
+      <button type=\\"button\\" className=\\"button-one\\" onClick={[Function: onClick]}>
+        Clear Filters
+      </button>
+      <AddFilterButton fieldsData={{...}} returnNewFilter={[Function: returnNewFilter]} customFilters={{...}}>
+        <button type=\\"button\\" className=\\"button-two addFilterBtn\\" onClick={[Function: handleNewFilter]}>
+          Add Filter
+        </button>
+      </AddFilterButton>
+    </div>
+  </div>
+</FilterPanel>"
+`;

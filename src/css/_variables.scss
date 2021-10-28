@@ -1,0 +1,97 @@
+/* Units */
+$core_font-size: 16px;
+$unit: 1rem;
+$unit-wrap: 1440px;
+
+// Media Queries
+
+/**
+ * When using media queries favour a mobile first approach.
+ * For example, use `min-width` to apply new styles as required where
+ * more screen space is available:
+ * @media (min-width: $mq-medium) {…
+ */
+$mq-tiny  : 320px;
+$mq-small : 375px;
+$mq-medium: 768px;
+$mq-large : 1024px;
+$mq-full  : 1024px;
+
+// Media Queries: Custom
+
+/**
+ * When new media queries are required, add them here and add why.
+ *
+ *  1. Custom Element Query Variable for Google Maps
+ */
+/* $mq-footer_row3: 700px; */ // [1]
+
+
+/* Colours */
+
+// Grayscale
+$white  : #ffffff;
+$grey-10: #eeeeee;
+$grey-20: #dddddd;
+$grey-30: #cccccc;
+$grey-40: #bbbbbb;
+$grey-50: #aaaaaa;
+$grey-60: #999999;
+$grey-70: #555555;
+$grey-80: #333333;
+$black  : #111111;
+
+// Primary
+$primaryColour       : #107b75;
+$primaryColour-light : lighten($primaryColour, 10%);
+$primaryColour-dark  : darken($primaryColour, 10%);
+
+$warningColour         : #ff1000;
+$warningColour-light   : #ff584d;
+$warningColour-dark    : #cc0d00;
+
+$yellow       : #fffdb1;
+$yellow-light : lighten($yellow, 10%);
+$yellow-dark  : darken($yellow, 10%);
+
+$pink        : #fbe8e6;
+
+/* Borders */
+$core_border: 1px solid $grey-40;
+
+/* Border Radius */
+$core_border-radius: 2px;
+
+
+/* Box Shadow */
+$core_box-shadow: 0 0 10px 0 $grey-40;
+$core_box-shadow-top: 0 -20px 20px -7px $grey-20;
+$core_box-shadow-bottom: 0 20px 20px -7px $grey-20;
+$core_box-shadow-top-white: 0 -20px 20px -7px $white;
+$core_box-shadow-bottom-white: 0 20px 20px -7px $white;
+
+/* Helper Classes */
+%hidden {
+  position: static;
+  overflow: visible;
+  clip: none;
+  height: auto;
+  width: auto;
+  margin: 0
+}
+
+// Helper Class: Margin Bottom
+.hc-mb {
+  margin-bottom: $unit;
+}
+
+// Helper Class: Align Right
+.hc-ar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+// Helper Class: Full Width
+.hc-fw {
+  width: 100%;
+}
